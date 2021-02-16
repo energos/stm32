@@ -1,7 +1,7 @@
 * Upstream files
 ** [[http://mecrisp.sourceforge.net/][Mecrisp - Native code Forth for MSP430 and ARM Cortex]]
    - Download: [[https://sourceforge.net/projects/mecrisp/files/mecrisp-stellaris-2.5.5.tar.gz/download][mecrisp-stellaris-2.5.5.tar.gz]] at [[https://sourceforge.net/projects/mecrisp/files/][sourcesorge.net]]
-   - License: see file:./mecrisp-stellaris-2.5.5/COPYING
+   - License: see [[./mecrisp-stellaris-2.5.5/COPYING][mecrisp-stellaris-2.5.5/COPYING]]
 ** Embello Forth Libraries
    - Download: [[https://github.com/jcw/jcw.github.io/raw/main/zips/embello-2020-03-31.zip][embello-2020-03-31.zip]] at [[https://github.com/jcw/jcw.github.io][jcw/jcw.github.io]]
-   - License: see file:./embello/UNLICENSE
+   - License: see [[./embello/UNLICENSE][embello/UNLICENSE]]
