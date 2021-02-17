@@ -1,5 +1,6 @@
-\ Copied from
+\ Copied with minors mods from
 \ ../upstream/embello/explore/1608-forth/flib/mecrisp/prompt.fs
+\ ../upstream/mecrisp-stellaris-2.5.5/common/prompt.txt
 
 \ Prompt by Glen Worstell
 \ copied with minor mods from Mecrisp Stellaris "common/prompt.txt"
@@ -17,6 +18,9 @@
             # # # #
      #> type space base ! ;
 
+
+\ If a "word" that calls "init" is loaded first, omit next line.
+: init ;
 \ Glens prompt
 : prompt ( -- )
   begin
@@ -35,3 +39,5 @@
 ;
 
 : init init ['] prompt hook-quit ! ; \ make new prompt
+
+init quit
