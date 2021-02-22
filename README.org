@@ -1,0 +1,14 @@
+#+TITLE: Energos's STM32 Misadventures
+#+OPTIONS: toc:nil num:nil html-postamble:nil
+#+STARTUP: showall
+
+* STM32
+** Development Boards
+   - [[https://jeelabs.org/article/1649a/][Let's start with a Blue Pill • JeeLabs]]
+
+* FORTH on STM32
+** Mecrisp
+   - [[http://mecrisp.sourceforge.net/][Mecrisp - Native code Forth for MSP430 and ARM Cortex]]
+   - [[https://mecrisp-stellaris-folkdoc.sourceforge.io/index.html][Mecrisp Stellaris Unofficial Documentation]]
+   - [[file:forth/upstream/README.org][Mecrisp and Embello Upstream files]]
+   - [[https://jeelabs.org/article/1608d/][Starting Forth on an STM32F1 • JeeLabs]]
