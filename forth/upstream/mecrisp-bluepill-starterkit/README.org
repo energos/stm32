@@ -1,0 +1,15 @@
+* Upstream files
+** [[https://mecrisp-stellaris-folkdoc.sourceforge.io/bluepill-starterkit.html#bluepill-starter][Blue Pill Starter Kit - Mecrisp Stellaris Unofficial Documentation]]
+   - [[pdf:~/Datasheets/.pool/ST/STM32F10x_Reference_Manual.pdf][STM32F10x Reference Manual]]: [[https://www.st.com/resource/en/reference_manual/cd00171190-stm32f101xx-stm32f102xx-stm32f103xx-stm32f105xx-and-stm32f107xx-advanced-armbased-32bit-mcus-stmicroelectronics.pdf][download]] from [[https://www.st.com/en/microcontrollers-microprocessors/stm32f103.html][ST]]
+   - Files - see [[https://mecrisp-stellaris-folkdoc.sourceforge.io/bluepill-starterkit.html#the-kit][Blue Pill Starter Kit]]
+     | File                | Description             | Upstream link       | Local mirror        |
+     |---------------------+-------------------------+---------------------+---------------------|
+     | 1b.fs               | Print support           | [[https://mecrisp-stellaris-folkdoc.sourceforge.io/_downloads/1b.fs][1b.fs]]               | [[./1b.fs][1b.fs]]               |
+     | memmap.fs           | Memory Map              | [[https://mecrisp-stellaris-folkdoc.sourceforge.io/_downloads/memmap.fs][memmap.fs]]           | [[./memmap.fs][memmap.fs]]           |
+     | bp-memstat.fs       | Memory Status           | [[https://mecrisp-stellaris-folkdoc.sourceforge.io/_downloads/bp-memstat.fs][bp-memstat.fs]]       | [[./bp-memstat.fs][bp-memstat.fs]]       |
+     | words4.fs           | List all Words          | [[https://mecrisp-stellaris-folkdoc.sourceforge.io/_downloads/words4.fs][words4.fs]]           | [[./words4.fs][words4.fs]]           |
+     | bluepill.support.fs | BluePill words          | [[https://mecrisp-stellaris-folkdoc.sourceforge.io/_downloads/bluepill.support.fs][bluepill.support.fs]] | [[./bluepill.support.fs][bluepill.support.fs]] |
+     |---------------------+-------------------------+---------------------+---------------------|
+     | bitfields.fs (1)    | Configuration templates | [[https://mecrisp-stellaris-folkdoc.sourceforge.io/_downloads/bitfields.fs][bitfields.fs]]        | [[./bitfields.fs][bitfields.fs]]        |
+   - Notes
+     - (1) Do not load this file. Copy and paste selected blocks.

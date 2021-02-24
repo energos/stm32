@@ -7,3 +7,4 @@
    - Download: [[https://github.com/jcw/jcw.github.io/raw/main/zips/embello-2020-03-31.zip][embello-2020-03-31.zip]] at [[https://github.com/jcw/jcw.github.io][jcw/jcw.github.io]]
    - License: see [[./embello/UNLICENSE][embello/UNLICENSE]]
    - README: see [[./embello/README.md][embello/README.md]]
+** [[./mecrisp-bluepill-starterkit/README.org][Mecrisp-Stellaris Blue Pill Starter Kit for the STM32F103]]

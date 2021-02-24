@@ -11,4 +11,5 @@
    - [[http://mecrisp.sourceforge.net/][Mecrisp - Native code Forth for MSP430 and ARM Cortex]]
    - [[https://mecrisp-stellaris-folkdoc.sourceforge.io/index.html][Mecrisp Stellaris Unofficial Documentation]]
    - [[file:forth/upstream/README.org][Mecrisp and Embello Upstream files]]
+   - [[./forth/upstream/mecrisp-bluepill-starterkit/README.org][Mecrisp-Stellaris Blue Pill Starter Kit for the STM32F103]]
    - [[https://jeelabs.org/article/1608d/][Starting Forth on an STM32F1 • JeeLabs]]
