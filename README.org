@@ -12,4 +12,6 @@
    - [[https://mecrisp-stellaris-folkdoc.sourceforge.io/index.html][Mecrisp Stellaris Unofficial Documentation]]
    - [[file:forth/upstream/README.org][Mecrisp and Embello Upstream files]]
    - [[./forth/upstream/mecrisp-bluepill-starterkit/README.org][Mecrisp-Stellaris Blue Pill Starter Kit for the STM32F103]]
+   - [[https://mecrisp-stellaris-folkdoc.sourceforge.io/svd2forth-v3.html][Svd2forth-v3 — Mecrisp Stellaris Unofficial Documentation]]
+   - [[https://mecrisp-stellaris-folkdoc.sourceforge.io/common-problems.html#common-problems][Common User Issues — Mecrisp Stellaris Unofficial Documentation]]
    - [[https://jeelabs.org/article/1608d/][Starting Forth on an STM32F1 • JeeLabs]]
