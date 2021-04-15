@@ -1,3 +1,5 @@
+\ Hey Emacs, this is a Forth file -*- mode: Forth; comment-column: 40; -*-
+
 \ dump ( address n )
 \ hexadecimal dump
 
