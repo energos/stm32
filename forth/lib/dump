@@ -3,23 +3,10 @@
 \ dump ( address n )
 \ hexadecimal dump
 
-: n1ascii ( x -- x<<4 n0 )
-    dup $f and [char] 0 + dup [char] 9 > if #7 + then swap #4 rshift ;
-: n2ascii ( x -- x<<8 n0 n1 )
-    n1ascii n1ascii ;
-: n4ascii ( x -- x<<16 n0 n1 n2 n3 )
-    n2ascii n2ascii ;
-: n8ascii ( x -- x<<32 n0 n1 n2 n3 n4 n5 n6 n7 )
-    n4ascii n4ascii ;
+: base-execute base @ >r base ! execute r> base ! ;
 
-: emit2 emit emit ;
-: emit4 emit2 emit2 ;
-: emit8 emit4 emit4 ;
-
-: n1. n1ascii drop emit ;
-: n2. n2ascii drop emit2 ;
-: n4. n4ascii drop emit4 ;
-: n8. n8ascii drop emit8 ;
+: n2. 0 <# # # #> type ;
+: n8. 0 <# # # # # # # # # #> type ;
 
 : range? ( n min max -- flag )
     #2 pick < rot rot < or not ;
@@ -62,3 +49,5 @@
     dumpchars
     drop drop drop cr
 ;
+
+: dump ['] dump #16 base-execute ;
