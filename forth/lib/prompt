@@ -1,3 +1,5 @@
+\ Hey Emacs, this is a Forth file -*- mode: Forth; comment-column: 40; -*-
+
 \ Copied with minors mods from
 \ ../upstream/embello/explore/1608-forth/flib/mecrisp/prompt.fs
 \ ../upstream/mecrisp-stellaris-2.5.5/common/prompt.txt
@@ -13,29 +15,29 @@
 
 \ printing in binary
 : .% base @ swap binary
-     0 <#
-     7 0 do # # # # [char] _ hold loop
-            # # # #
-     #> type space base ! ;
+    0 <#
+    7 0 do # # # # [char] _ hold loop
+    # # # #
+    #> type space base ! ;
 
 
 \ If a "word" that calls "init" is loaded first, omit next line.
 : init ;
 \ Glens prompt
 : prompt ( -- )
-  begin
-    compiletoram? if [char] R else [char] F then emit \ show where compiling.
-    base @
-    case \ show base.
-      #10 of [char] # emit endof
-      #16 of [char] $ emit endof
-      #2  of [char] % emit endof
-      ." B" base @ .# \ show base if not # $ %.
-    endcase
-    depth .# \ show stack depth.
-    ." > "    \ show ">" for prompt. Could show "OK."
-    query cr interpret cr
-  again
+    begin
+        compiletoram? if [char] R else [char] F then emit \ show where compiling.
+        base @
+        case \ show base.
+            #10 of [char] # emit endof
+            #16 of [char] $ emit endof
+            #2  of [char] % emit endof
+            ." B" base @ .# \ show base if not # $ %.
+        endcase
+        depth .# \ show stack depth.
+        ." > "    \ show ">" for prompt. Could show "OK."
+        query cr interpret cr
+    again
 ;
 
 : init init ['] prompt hook-quit ! ; \ make new prompt
