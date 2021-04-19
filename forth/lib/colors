@@ -1,0 +1,18 @@
+\ Hey Emacs, this is a Forth file -*- mode: Forth; comment-column: 40; -*-
+
+\ https://mecrisp-stellaris-folkdoc.sourceforge.io/colour.html
+
+: ansi-esc   ( -- ) 27 emit [char] [ emit ;
+: ansi-reset ( -- ) ansi-esc ." 0m" ;
+: black      ( -- ) ansi-esc ." 30;0m" ;
+: red        ( -- ) ansi-esc ." 31;1m" ;
+: green      ( -- ) ansi-esc ." 32;1m" ;
+: yellow     ( -- ) ansi-esc ." 33;1m" ;
+: blue       ( -- ) ansi-esc ." 34;1m" ;
+: magenta    ( -- ) ansi-esc ." 35;1m" ;
+: cyan       ( -- ) ansi-esc ." 36;1m" ;
+: white      ( -- ) ansi-esc ." 37;1m" ;
+
+: colors cr black ." black " red ." red " green ." green " yellow ." yellow "
+    blue ." blue " magenta ." magenta " cyan ." cyan " white ." white "
+    ansi-reset ." default " ;
