@@ -39,7 +39,7 @@
             swap 1- swap
             dup 0= if
                 \ linecounter==0, print CR and address
-                cr #2 pick n8. [char] : emit space space then
+                cr [char] $ emit #2 pick n8. space space then
             \ print byte and SPACE, increment address
             rot dup c@ n2. space 1+ rot rot
             1+
